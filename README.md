@@ -4,7 +4,7 @@ Crystal-complete spec for esoteric programming.
 
 # Usage
 ```bash
-python MAC.py zzzzzzzzzzzO
+python 11O(3).py zzzzzzzzzzzO
 K = 11
 x=23,y=11,rule=B3/S23
 11bo$4bo3bo5bo3bo$3bobo11bobo$3bobo11bobo$2obobob9obobob2o$2obo15bob2o$3bo15bo$3
