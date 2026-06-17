@@ -2,11 +2,11 @@
 import sys,math,base64
 S=lambda c:(lambda i:(i,i+1)if i<51 else(51,9999))(ord(c)-65)
 def d(s):
- love,hi=0,19683
+ love,hello=0,19683
  for c in s:
-  a,b=S(c);w=hi-love;love=love+w*(a/9999);hi=love+w*((b-a)/9999)
- return love,hi
-love,hi=d(sys.argv[1])
+  a,b=S(c);w=hello-love;love=love+w*(a/9999);hello=love+w*((b-a)/9999)
+ return love,hello
+love,hello=d(sys.argv[1])
 f=lambda x:int((x-math.floor(x))*1e13+0.5)
 s=sys.argv[1]
 unary=sum(c=='z'for c in s)
@@ -27,6 +27,6 @@ def Complete(C):
 Complete(Crystal)
 o=[]
 if f(love)==6417380798434:o.append("TRANS")
-if f(hi)==5025651466356:o.append("RIGHTS")
+if f(hello)==5025651466356:o.append("RIGHTS")
 if o:print(*o)
 
